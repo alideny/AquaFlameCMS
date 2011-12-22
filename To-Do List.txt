@@ -1,0 +1,30 @@
+= WoWFailure Project -- What has to be Done?! =
+
+1) Make a Donation Panel. <-- =Intergrated= --> (Work Started)
+2) Fix and Create the Character View System. (Work Stoped)
+3) Character Transfer (need to be worked as a part of donation system)
+4) Name Change (need to be worked as a part of donation system)
+5) Faction Change (need to be worked as a part of donation system)
+6) Appearance Change (need to be worked as a part of donation system)
+7) Race Change (finished but need to be worked as a part of donation system)
+8) Try to work in armory (Work Started - 70% DONE)
+9) Fix the submit options in the fan art, wallpapers and general media zone, 
+   and add a option to gm can accept the submission before they appear public
+10) All other the criterias (Conquest, 2v2, 3v3, 5v5) needs to be fixed.(99% DONE!)
+11) Create the Module 'add items to buy' for vote points.(Work Started)
+12) Work on Arena teams, Guild teams (Work Started - 20%-30% Done)
+13) Work on Search. Make 1 search for all (Characters,Arena,Guilds)...
+14) Make Admin panel (No work done for now...)
+
+# --------------------------------------------------------------
+# |CMS:                                  |    WOWFailureCMS    |
+# |Based on:                             |http://eu.battle.net |
+# --------------------------------------------------------------
+# |Database version:                             |    0.2.0    |
+# |Website Version:                              |    0.4.0    |
+# |Release Date:                                 | 2010-05-17  |
+# |Latest Update:                                | 2011-12-11  |
+# ----------------------------TEAM------------------------------
+# |Team: FailZorD, AwkwardDev, Axium, dju35, Fabian, hondacrx, |
+# |Kitiara, MrBillys, netcho, zze, Voragine(Roberto Roeschmann)|
+# --------------------------------------------------------------

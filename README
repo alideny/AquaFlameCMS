@@ -1,0 +1,46 @@
+= WoWFailure Project -- General information =
+
+Copyright (C) WoWFailure  (http://www.wowfailure.com)
+Copyright (C) Strawberry  (http://www.strawberry-pr0jcts.com/)
+
+  WoWFailure Project is free website; you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation; either version 2 of the License, or
+  (at your option) any later version.
+
+  This website is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this website; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+WoWFailure is a World of Warcraft Website.
+
+For further information on the WoWFailure project, please visit the
+project website at http://www.strawberry-pr0jcts.com/
+
+SQL files to create the database can be found in the sql directory. Files
+to update your database from an older revision/version can be found in the
+sql/updates directory.
+
+See http://www.strawberry-pr0jcts.com/forum/index.php?/topic/5-guide-quick-guide-on-wowfailurecms/ for installation instructions on Windows.
+This is an apache Working Website, also works on Linux.
+
+Our Bug Tracker is located here.
+http://www.strawberry-pr0jcts.com/forum/index.php?/forum/30-wowfailurecms-support/
+
+# --------------------------------------------------------------
+# |CMS:                                  |    WOWFailureCMS    |
+# |Based on:                             |http://eu.battle.net |
+# --------------------------------------------------------------
+# |Database version:                             |    0.2.0    |
+# |Website Version:                              |    0.4.0    |
+# |Release Date:                                 | 2010-05-17  |
+# |Latest Update:                                | 2011-12-11  |
+# ----------------------------TEAM------------------------------
+# |Team: FailZorD, AwkwardDev, Axium, dju35, Fabian, hondacrx, |
+# |Kitiara, MrBillys, netcho, zze, Voragine(Roberto Roeschmann)|
+# --------------------------------------------------------------
