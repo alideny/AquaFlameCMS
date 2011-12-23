@@ -4,59 +4,7 @@ if (!isset($_SESSION))
 {
   session_start();
 }
-
-/*||||||||||||||||||||||||||||||||||||||||*/
-/*|||||||The Language Configuration|||||||*/
-/*|||||||||||DO NOT TOUCH THIS||||||||||||*/
-/*||||||||||||||||||||||||||||||||||||||||*/
-$lang = &$_SESSION['Local'];
-$lang = $_GET['Local'];
-switch ($lang)
-{
-    case 'en-us' :
-        include ("lang/en-us.php");
-        break;
-	case 'ro-ro' :
-        include ("lang/ro-ro.php");
-        break;
-    case 'en-gb' :
-        include ("lang/en-gb.php");
-        break;
-	case 'it-it' :
-        include ("lang/it-it.php");
-        break;
-    case 'de-de' :
-        include ("lang/de-de.php");
-        break;
-    case 'bu-bu' :
-        include ("lang/bg-bg.php");
-        break;
-    case 'es-es' :
-        include ("lang/es-es.php");
-        break;
-    case 'es-mx' :
-        include ("lang/es-mx.php");
-        break;
-    case 'gr-gr' :
-        include ("lang/gr-gr.php");
-        break;
-    case 'ru-ru' :
-        include ("lang/ru-ru.php");
-        break;
-    case 'zh-cn' :
-        include ("lang/zh-cn.php");
-        break;
-    case 'zh-tw' :
-        include ("lang/zh-tw.php");
-        break;
-    case 'fr-fr' :
-        include ("lang/fr-fr.php");
-        break;         
-    default :
-        include ("lang/en-us.php");
-        $lang = 'en-us';
-}
-
+include("lang/System.php");
 class Configuration
 {
     /*||||||||||||||||||||||||||||||||||||||||*/
@@ -67,9 +15,6 @@ class Configuration
     public $serverpass = "ascent"; //Your MySQL password
     public $serverport = "3306"; // Your MySQL Port
     public $donatadmin = "ascent"; // Your Donation Admin Password
-    public $website['realm'] = "Set Realmlist Your_Realmlist"; // You realm (Example: Set Realmlist login.wowfailure.com)
-
-
     /*||||||||||||||||||||||||||||||||||||||||*/
     /*|||||||The Website Configuration||||||||*/
     /*||||||||||||||||||||||||||||||||||||||||*/
@@ -79,20 +24,11 @@ class Configuration
     public $server_cdb_2 = "characters"; //Your characters database
     public $server_wdb = "world"; //Your world database
     public $server_wdb_2 = "world"; //Your world database
-    public $charTable = 'characters'; //Your Character Table!!
-    public $name_realm1['realm'] = "Server_Name_1"; //Your Realm Name 1
-    public $name_realm2['realm'] = "Server_Name_2"; //Your Realm Name 2private public $
+    public $charTable = 'characters'; //Your Character Table!
     public $realm_count = '1'; //number of realmsprivate public $
     public $charLimit = '10'; //Max characters to show on the pageprivate public $
     public $mysql_cod = 'cp1251';
-    public $website['title'] = "WoWFailureCMS"; // Your Website Title
-    public $website['slogan'] = "WoWFailureCMS, get your best CMS today, simple and fast!"; // Your Website Slogan.
-    public $website['address'] = "http://www.wowfailure.co.cc"; // 'http://url/foldername/' or 'http://url/'
-    public $website['root'] = "/WoWFailureCMS/"; // '/' <- for root and '/foldername/' <- for any folder
 }
-
-    /*||||||||||||||||||||||||||||||||||||||||*/
-    /*||||||||||||DO NOT EDIT BELOW|||||||||||*/
     /*||||||||||||||||||||||||||||||||||||||||*/
     /*||||||||||||DO NOT EDIT BELOW|||||||||||*/
     /*||||||||||||||||||||||||||||||||||||||||*/
@@ -111,5 +47,15 @@ class Configuration
         mysql_select_db($server_db,$connection_setup)or die(mysql_error());
     }
     */
+?>
+<?php
+/* Moved these here because ['  '] gives errors */
+$website['realm'] = "Set Realmlist Your_Realmlist"; // You realm (Example: Set Realmlist login.wowfailure.com)
+$name_realm1['realm'] = "Server_Name_1"; //Your Realm Name 1
+$name_realm2['realm'] = "Server_Name_2"; //Your Realm Name 2
+$website['title'] = "WoWFailureCMS"; // Your Website Title
+$website['slogan'] = "WoWFailureCMS, get your best CMS today, simple and fast!"; // Your Website Slogan.
+$website['address'] = "http://www.wowfailure.co.cc"; // 'http://url/foldername/' or 'http://url/'
+$website['root'] = "/WoWFailureCMS/"; // '/' <- for root and '/foldername/' <- for any folder
 ?>
 <script type="text/javascript" src="http://static.wowhead.com/widgets/power.js"></script>
