@@ -22,14 +22,20 @@ if(!isset($_SESSION['username']))
   $Userplate = new Userplate();
 ?>
 <div class="user-plate">
-<div id="user-plate" class="card-character plate-0 ajax-update" style="background: url(<?php echo $website['root']; ?>wow/static/images/layout/cards/no-chars.png) 0 100% no-repeat;">
+<div id="user-plate" class="card-character plate-0 ajax-update" style="background: url(<?php echo $website['root']; ?>wow/static/images/2d/card/0-0.jpg) 0 100% no-repeat;">
 <div class="card-overlay"></div>
 <span class="hover"></span>
 </a>
 <div class="meta">
 <div class="player-name"><?php echo strtolower($_SESSION['username']); ?></div>
 <div class="character">
-<a class="character-name context-link" href="#" rel="np" data-tooltip="Change character"><?php if($Userplate->getNumChars() > 0) { echo $Userplate->getNumChars()." Characters";} else {echo "No Characters" ;} ?> <span class="arrow"></span></a>
+<a class="character-name context-link" href="#" rel="np" data-tooltip="Change character"><?php if($Userplate->getNumChars() > 0) { echo $Userplate->getNumChars()." Characters";} else {echo "0 Characters" ;} ?> <span class="arrow"></span></a>
+<div class="guild">
+<a class="guild-name" href="#">
+<?php echo $name_realm1['realm'] ?>
+</a>
+</div>
+
     <div id="context-1" class="ui-context character-select">
     <span class="arrow"></span>
       <div class="context">
