@@ -19,8 +19,8 @@ if(!isset($_SESSION['username']))
       $side = "horde";
     break;
   } 
-  $Userplate = new Userplate();
-?>
+  	 $Userplate = new Userplate();
+	?>
 <div class="user-plate">
 <div id="user-plate" class="card-character plate-0 ajax-update" style="background: url(<?php echo $website['root']; ?>wow/static/images/2d/card/0-0.jpg) 0 100% no-repeat;">
 <div class="card-overlay"></div>
